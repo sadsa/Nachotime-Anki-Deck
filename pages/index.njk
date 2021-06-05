@@ -1,0 +1,11 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+
+  <ul class="cards">
+    <li>vocabulary {% include "partials/cards/vocabulary-card-1.njk" %}</li>
+    <li>back {% include "partials/cards/back.njk" %}</li>
+    <li>root form (verb){% include "partials/cards/root-form.njk" %}</li>
+  </ul>
+
+{% endblock %}

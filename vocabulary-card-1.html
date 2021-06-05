@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Fluent Forever Card Template</title>
+    <style>
+      .card {
+        font-family: arial;
+        font-size: 20px;
+        text-align: center;
+        color: black;
+        background-color: white;
+        text-align: left;
+      }
+
+      .card * {
+        margin-bottom: 30px;
+      }
+
+      .card__title {
+        font-size: 1.2em;
+      }
+
+      .card1 {
+        background-color: #ffffff;
+      }
+
+      .image-list {
+        display: flex;
+        justify-content: space-between;
+      }
+      .image-list > img {
+        border-radius: 5px;
+        border: 4px solid lightgrey;
+        margin-left: 20px;
+        margin-bottom: 0;
+      }
+      .image-list > img:first-child {
+        margin-left: 0;
+      }
+      .definition {
+        color: grey;
+        font-style: italic;
+        margin-left: 0;
+      }
+      .separator {
+        margin-top: 60px;
+        margin-bottom: 60px;
+      }
+      .back-word {
+        font-size: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    --FRONT--
+
+    <p class="card__title">Fill in the blank</p>
+
+    <p>{{ Text(Example) }}</p>
+
+    <div class="image-list">{{ Picture }}</div>
+
+    <blockquote class="definition">
+      "{{Extra Front (or Definition)}}"
+    </blockquote>
+
+    --BACK--
+
+    {{ FrontSide }}
+
+    <hr id="answer" />
+
+    <div class="back-word">{{ Back(Word) }}</div>
+    <div>{{Always Back}}</div>
+
+    <hr class="separator" />
+
+    <p>{{Recording of Sentence}}</p>
+
+    {{#Root Form (Test Comprehension if here)}}
+
+    <p>Root Form: {{Root Form (Test Comprehension if here)}}</p>
+
+    {{/Root Form (Test Comprehension if here)}}
+  </body>
+</html>

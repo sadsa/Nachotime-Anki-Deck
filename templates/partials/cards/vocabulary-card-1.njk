@@ -1,0 +1,33 @@
+{% extends "card.njk" %}
+
+{% block front %}
+
+  <div class="card__title">Fill in the blank</div>
+
+  {% include "partials/fields/text-example-field.njk" %}
+
+  {% include "partials/fields/picture-field.njk" %}
+
+  {% include "partials/fields/definition-field.njk" %}
+
+{% endblock %}
+
+{% block back %}
+
+  <hr id="answer" />
+
+  {% include "partials/fields/back-word-field.njk" %}
+  
+  {% include "partials/fields/always-back-field.njk" %}
+
+  <hr class="separator" />
+
+  {% include "partials/fields/recording-field.njk" %}
+
+  {# {{#Root Form (Test Comprehension if here)}}
+
+  <p>Root Form: {{Root Form (Test Comprehension if here)}}</p>
+
+  {{/Root Form (Test Comprehension if here)}} #}
+
+{% endblock %}

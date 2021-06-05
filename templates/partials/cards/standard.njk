@@ -1,0 +1,25 @@
+{% extends "card.njk" %}
+
+{% block front %}
+
+  {% include "partials/fields/english-phrase-field.njk" %}
+
+{% endblock %}
+
+{% block middle %}
+
+  <hr id="answer" />
+
+  {% include "partials/fields/spanish-partial-phrase-field.njk" %}
+
+{% endblock %}
+
+{% block back %}
+
+  <hr id="answer" />
+
+  {% include "partials/fields/spanish-phrase-field.njk" %}
+
+  {% include "partials/fields/recording-field.njk" %}
+
+{% endblock %}
